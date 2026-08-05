@@ -1,2 +1,5 @@
-jdk:
-  - openjdk17
+before_install:
+  - sdk install java 17.0.9-tem || true
+  - export JAVA_HOME=$(sdk home java 17.0.9-tem)
+  - export PATH=$JAVA_HOME/bin:$PATH
+  - java -version
