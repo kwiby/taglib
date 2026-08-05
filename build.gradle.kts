@@ -50,7 +50,6 @@ dependencies {
 
 mavenPublishing {
     publishToMavenCentral()
-    signAllPublications()
 
     coordinates("io.github.kyant0", "taglib", "1.0.6")
 
